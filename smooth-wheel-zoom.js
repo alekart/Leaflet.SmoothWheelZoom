@@ -8,7 +8,6 @@ L.Map.mergeOptions({
     // @option smoothWheelZoom: number = 1
     // setting zoom speed
     smoothSensitivity:1
-
 });
 
 
@@ -33,7 +32,7 @@ L.Map.SmoothWheelZoom = L.Handler.extend({
         var map = this._map;
         this._isWheeling = true;
         this._wheelMousePosition = map.mouseEventToContainerPoint(e);
-        this._centerPoint = map.getSize()._divideBy(2);
+        this._centerPoint = map.getSize().divideBy(2);
         this._startLatLng = map.containerPointToLatLng(this._centerPoint);
         this._wheelMouseLatLng = map.containerPointToLatLng(this._wheelMousePosition);
         this._startZoom = map.getZoom();
@@ -41,7 +40,6 @@ L.Map.SmoothWheelZoom = L.Handler.extend({
         this._zooming = true;
 
         map._stop();
-        if (map._panAnim) map._panAnim.stop();
 
         this._goalZoom = map.getZoom();
         this._prevCenter = map.getCenter();
@@ -57,7 +55,8 @@ L.Map.SmoothWheelZoom = L.Handler.extend({
         if (this._goalZoom < map.getMinZoom() || this._goalZoom > map.getMaxZoom()) {
             this._goalZoom = map._limitZoom(this._goalZoom);
         }
-        this._wheelMousePosition = this._map.mouseEventToContainerPoint(e);
+
+        this._wheelMousePosition = map.mouseEventToContainerPoint(e);
         this._wheelMouseLatLng = map.containerPointToLatLng(this._wheelMousePosition);
 
         clearTimeout(this._timeoutId);
