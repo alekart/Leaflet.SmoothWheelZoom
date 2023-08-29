@@ -1,6 +1,6 @@
 {
   "name": "@dcode-evo/leaflet.smoothwheelzoom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Smooth wheel zoom for leaflet",
   "main": "smooth-wheel-zoom.js",
   "keywords": [
@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/Dcode-Evo/Leaflet.SmoothWheelZoom/issues"
   },
-  "homepage": "https://github.com/Dcode-Evo/Leaflet.SmoothWheelZoom#readme"
+  "homepage": "https://github.com/Dcode-Evo/Leaflet.SmoothWheelZoom#readme",
+  "typings": "types.d.ts",
+  "files": [
+    "smooth-wheel-zoom.js",
+    "index.ts",
+    "types.d.ts",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ]
 }
