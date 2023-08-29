@@ -1,7 +1,10 @@
 # Leaflet.SmoothWheelZoom
-smooth wheel zoom for leaflet.
 
-This plugin provide smooth zoom ux like Google map.
+Smooth wheel zoom for leaflet.
+
+This plugin provide smooth zoom UX like Google map.
+
+[Demo](https://dcode-evo.github.io/Leaflet.SmoothWheelZoom/)
 
 ### Usage
 
@@ -14,10 +17,4 @@ var map = L.map('map', {
 });
 ```
 
-
 ![demo](./demo_gif/demo.gif "demo")
-
-
-### Demo 
-[Demo](https://mutsuyuki.github.io/Leaflet.SmoothWheelZoom/)
-
