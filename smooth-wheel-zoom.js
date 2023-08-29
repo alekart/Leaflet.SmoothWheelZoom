@@ -1,4 +1,3 @@
-
 L.Map.mergeOptions({
     // @section Mousewheel options
     // @option smoothWheelZoom: Boolean|String = true

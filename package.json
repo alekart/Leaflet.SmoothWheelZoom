@@ -2,7 +2,7 @@
   "name": "@dcode-evo/leaflet.smoothwheelzoom",
   "version": "1.0.0",
   "description": "Smooth wheel zoom for leaflet",
-  "main": "SmoothWheelZoom.js",
+  "main": "smooth-wheel-zoom.js",
   "keywords": [
     "leaflet",
     "plugin"
